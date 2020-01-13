@@ -73,23 +73,7 @@
                     rZero++;
                     if(rZero > 59){
                         rZero = 0;
-                        a++;
-                        if(a > 9){
-                            rZero = 59;
-                            a = 9;
-                            dir = 'd';
-                        }
-                    }
-                }else{
-                    rZero--;
-                    if(rZero < 0){
-                        rZero = 59;
-                        a--;
-                        if(a < 0){
-                            a = 0;
-                            rZero = 0;
-                            dir = 'e';
-                        }
+                        
                     }
                 }
     		}, 
@@ -105,5 +89,10 @@
   </head>
   <body oncontextmenu="return false;">
     <div id="KeyShotXR"></div>
+    <style type="text/css">
+    	#KeyShotXR, #KeyShotXR > div > div, img{
+    		height:600px !important;
+    	}
+    </style>
   </body>
 </html>
